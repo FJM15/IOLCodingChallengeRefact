@@ -20,6 +20,8 @@ var obj1 = FormaGeometricaContexto.GenerarCirculo(radio: 3);
 var obj2 = FormaGeometricaContexto.GenerarCirculo(diametro: 6);
 ```
 
+Se desarrolló a modo "Lógica de Negocio" la posibilidad de recibir parámetros en cero o negativos para la creación de figuras geométricas. Ante parámetros negativos se tomará el valor absoluto del mismo, mientras que para parámetros en cero se aceptarán como tal y los cálculos se llevarán a cabo en estos valores.
+
 También se segregaron en la capa de Negocio los servicios de reportería, separando la responsabilidad de cálculo y armado del reporte.
 
 ### Idiomas
@@ -29,6 +31,13 @@ Para permitir la generación del reporte en múltiples idiomas, queda del lado d
 En este caso, se generaron recursos para cada idioma con todas las traducciones y la lectura de los mismos se logra con el seteo de la cultura del usuario (CurrentUICulture), que se establece para cada hilo en el momento de la generación del reporte, y se revierte al terminar esta tarea. 
 
 También se crearon clases en la carpeta Tools que definen los idiomas existentes y cuentan con los métodos para setear y revertir las distintas culturas.
+
+### Tests
+
+Se dividieron los test en tres grupos para valir los distintos puntos principales a controlar:
+- Tests de Cálculos: Apunta a validar el correcto cálculo de áreas y perímetros de las figuras geométricas existentes.
+- Tests de Idiomas: Apunta a validar la correcta traducción del reporte en cada uno de los idiomas configurados.
+- Tests de Parámetros: Apunta a controlar el correcto cálculo de áreas y perímetros ante la creación de figuras geométricas con parámetros en cero o negativos.
 
 ### Conclusión
 
