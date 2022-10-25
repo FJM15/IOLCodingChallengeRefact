@@ -42,7 +42,9 @@ Se dividieron los test en tres grupos para valir los distintos puntos principale
 ### Conclusión
 
 Se llevó a cabo la refactorización del código siguiendo principios y buenas prácticas de programación para obtener como resultado un código limpio, escalable y mantenible. 
-La generación de nuevas figuras geométricas solo requiere la creación una clase para la misma en la capa de Entidades, que implemente la interfaz IFormaGeometrica, y la creación del método para su instanciación en FormaGeometricaContexto, en la capa de Negocio.
-Por otro lado, se pueden agregar nuevos idiomas con solo generar el recurso con las traducciones en el directorio Resources de la capa de Datos, y agregando esta nueva entrada en la clase Culturas de la capa de Entidades.
+
+La generación de nuevas figuras geométricas solo requiere la creación una clase para la misma, que implemente la interfaz IFormaGeometrica, y la creación del método para su instanciación en el contexto (FormaGeometricaContexto). A su vez, se debe agregar la traducción del nombre de la nueva figura en los recursos de idioma para cada cultura y en el default en el proyecto de Datos. La traducción para una nueva figura requiere el agregado de dos traducciones en estos archivos, una para singular y otra para plural, con las claves *nombre_clase_figura_geométrica_en_minúscula*_s y *nombre_clase_figura_geométrica_en_minúscula*_p respectivamente.
+
+Por otro lado, se pueden agregar nuevos idiomas con solo generar el recurso con las traducciones en el directorio Resources, y agregando esta nueva entrada en la clase Culturas. Si se agregan nuevos idiomas en la clase Cultura pero no se crean los recursos para las traducciones, se hará uso del recurso por defalt *Language.resx*.
 
 **Gracias.**

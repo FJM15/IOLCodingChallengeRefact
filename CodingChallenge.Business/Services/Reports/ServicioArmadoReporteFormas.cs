@@ -32,6 +32,7 @@ namespace CodingChallenge.Business.Services.Reports
             }
             catch (Exception)
             {
+                // De ocurrir un error se retorna vacio
                 return "";
             }
         }

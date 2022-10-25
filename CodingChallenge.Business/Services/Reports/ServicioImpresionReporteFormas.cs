@@ -35,6 +35,7 @@ namespace CodingChallenge.Data.Services.Shapes
             }
             catch (Exception)
             {
+                // De ocurrir un error se retorna vacio
                 return "";
             }
         }
