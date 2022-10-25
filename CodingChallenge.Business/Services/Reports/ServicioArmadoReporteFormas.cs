@@ -40,7 +40,7 @@ namespace CodingChallenge.Business.Services.Reports
             $"{ tr.GetTraduccion("encabezado") }";
 
         private static string GenerarLineaForma(ReporteFormas forma, ITraductor tr) =>
-            $"{ forma.Cantidad } { (forma.Cantidad == 1 ? tr.GetTraduccion(forma.Forma.ToLower() + "_s") : tr.GetTraduccion(forma.Forma.ToLower() + "_p")) } | { tr.GetTraduccion("area") } {forma.SumaAreas:#.##} | { tr.GetTraduccion("perimetro") } {forma.SumaPerimetros:#.##} { tr.GetTraduccion("salto_linea") }";
+            $"{ forma.Cantidad } { (forma.Cantidad == 1 ? tr.GetTraduccion(forma.Forma.ToLower() + "_s") : tr.GetTraduccion(forma.Forma.ToLower() + "_p")) } | { tr.GetTraduccion("area") } { Decimal.Round(forma.SumaAreas, 2) } | { tr.GetTraduccion("perimetro") } { Decimal.Round(forma.SumaPerimetros, 2) } { tr.GetTraduccion("salto_linea") }";
 
         private static string GenerarLineaPieReporte(List<ReporteFormas> lista_formas_reporte, ITraductor tr)
         {
@@ -48,8 +48,8 @@ namespace CodingChallenge.Business.Services.Reports
 
             sb.Append($"{ tr.GetTraduccion("total") }{ tr.GetTraduccion("salto_linea") }");
             sb.Append($"{ lista_formas_reporte.Sum(f => f.Cantidad) } { (lista_formas_reporte.Sum(c => c.Cantidad) == 1 ? tr.GetTraduccion("forma_s") : tr.GetTraduccion("forma_p")) } ");
-            sb.Append($"{ tr.GetTraduccion("perimetro") } { lista_formas_reporte.Sum(p => p.SumaPerimetros).ToString("#.##") } ");
-            sb.Append($"{ tr.GetTraduccion("area") } { lista_formas_reporte.Sum(a => a.SumaAreas).ToString("#.##") }");
+            sb.Append($"{ tr.GetTraduccion("perimetro") } { Decimal.Round(lista_formas_reporte.Sum(p => p.SumaPerimetros), 2) } ");
+            sb.Append($"{ tr.GetTraduccion("area") } { Decimal.Round(lista_formas_reporte.Sum(a => a.SumaAreas), 2) }");
 
             return sb.ToString();
         }

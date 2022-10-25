@@ -71,7 +71,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(15, 12, lado: 6.1846m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81 | Perímetro 39.37 <br/>TOTAL:<br/>1 Forma Perímetro 39.37 Área 81",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81.00 | Perímetro 39.37 <br/>TOTAL:<br/>1 Forma Perímetro 39.37 Área 81.00",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -95,7 +95,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, lado: 3.1622m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13.5 | Perímetro 15.16 <br/>TOTAL:<br/>1 Forma Perímetro 15.16 Área 13.5",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13.50 | Perímetro 15.16 <br/>TOTAL:<br/>1 Forma Perímetro 15.16 Área 13.50",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -148,7 +148,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarCirculo(radio: 3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Círculos | Área 56.55 | Perímetro 37.7 <br/>TOTAL:<br/>2 Formas Perímetro 37.7 Área 56.55",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Círculos | Área 56.55 | Perímetro 37.70 <br/>TOTAL:<br/>2 Formas Perímetro 37.70 Área 56.55",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -188,7 +188,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, lado: 3.1622m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios rectángulo | Área 27 | Perímetro 30.32 <br/>TOTAL:<br/>2 Formas Perímetro 30.32 Área 27",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios rectángulo | Área 27.00 | Perímetro 30.32 <br/>TOTAL:<br/>2 Formas Perímetro 30.32 Área 27.00",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 

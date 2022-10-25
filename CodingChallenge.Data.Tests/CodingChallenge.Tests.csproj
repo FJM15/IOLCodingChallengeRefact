@@ -56,6 +56,7 @@
     <Compile Include="ServicioReporteFormasCalculosTests.cs" />
     <Compile Include="ServicioReporteFormasIdiomasTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioReporteFormasParametrosTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
