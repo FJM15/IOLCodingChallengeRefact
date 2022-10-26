@@ -23,7 +23,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarCirculo(diametro: 6)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28.27 | Perímetro 18.85 <br/>TOTAL:<br/>1 Forma Perímetro 18.85 Área 28.27",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28,27 | Perímetro 18,85 <br/>TOTAL:<br/>1 Forma Perímetro 18,85 Área 28,27",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -35,7 +35,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarCirculo(radio: 3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28.27 | Perímetro 18.85 <br/>TOTAL:<br/>1 Forma Perímetro 18.85 Área 28.27",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28,27 | Perímetro 18,85 <br/>TOTAL:<br/>1 Forma Perímetro 18,85 Área 28,27",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -59,7 +59,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(15, 12, altura: 6)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81 | Perímetro 39.37 <br/>TOTAL:<br/>1 Forma Perímetro 39.37 Área 81",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81 | Perímetro 39,37 <br/>TOTAL:<br/>1 Forma Perímetro 39,37 Área 81",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -71,7 +71,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(15, 12, lado: 6.1846m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81.00 | Perímetro 39.37 <br/>TOTAL:<br/>1 Forma Perímetro 39.37 Área 81.00",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81,00 | Perímetro 39,37 <br/>TOTAL:<br/>1 Forma Perímetro 39,37 Área 81,00",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -83,7 +83,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, altura: 3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13.5 | Perímetro 15.16 <br/>TOTAL:<br/>1 Forma Perímetro 15.16 Área 13.5",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13,5 | Perímetro 15,16 <br/>TOTAL:<br/>1 Forma Perímetro 15,16 Área 13,5",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -95,7 +95,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, lado: 3.1622m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13.50 | Perímetro 15.16 <br/>TOTAL:<br/>1 Forma Perímetro 15.16 Área 13.50",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13,50 | Perímetro 15,16 <br/>TOTAL:<br/>1 Forma Perímetro 15,16 Área 13,50",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -107,7 +107,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrianguloEquilatero(5)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Triángulo equilátero | Área 10.83 | Perímetro 15 <br/>TOTAL:<br/>1 Forma Perímetro 15 Área 10.83",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Triángulo equilátero | Área 10,83 | Perímetro 15 <br/>TOTAL:<br/>1 Forma Perímetro 15 Área 10,83",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -148,7 +148,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarCirculo(radio: 3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Círculos | Área 56.55 | Perímetro 37.70 <br/>TOTAL:<br/>2 Formas Perímetro 37.70 Área 56.55",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Círculos | Área 56,55 | Perímetro 37,70 <br/>TOTAL:<br/>2 Formas Perímetro 37,70 Área 56,55",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -175,7 +175,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(15, 12, altura: 6)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios isósceles | Área 162 | Perímetro 78.74 <br/>TOTAL:<br/>2 Formas Perímetro 78.74 Área 162",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios isósceles | Área 162 | Perímetro 78,74 <br/>TOTAL:<br/>2 Formas Perímetro 78,74 Área 162",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -188,7 +188,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, lado: 3.1622m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios rectángulo | Área 27.00 | Perímetro 30.32 <br/>TOTAL:<br/>2 Formas Perímetro 30.32 Área 27.00",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Trapecios rectángulo | Área 27,00 | Perímetro 30,32 <br/>TOTAL:<br/>2 Formas Perímetro 30,32 Área 27,00",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -202,7 +202,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrianguloEquilatero(3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>3 Triángulos equiláteros | Área 6.06 | Perímetro 18 <br/>TOTAL:<br/>3 Formas Perímetro 18 Área 6.06",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>3 Triángulos equiláteros | Área 6,06 | Perímetro 18 <br/>TOTAL:<br/>3 Formas Perímetro 18 Área 6,06",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 

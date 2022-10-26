@@ -42,7 +42,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(7, 5, altura: 1)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Cuadrado | Área 25 | Perímetro 20 <br/>1 Círculo | Área 7.07 | Perímetro 9.42 <br/>1 Triángulo equilátero | Área 6.93 | Perímetro 12 <br/>1 Triángulo isósceles | Área 5.56 | Perímetro 11 <br/>1 Trapecio rectángulo | Área 3.5 | Perímetro 9.41 <br/>1 Trapecio isósceles | Área 6 | Perímetro 14.83 <br/>TOTAL:<br/>6 Formas Perímetro 76.67 Área 54.06",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Cuadrado | Área 25 | Perímetro 20 <br/>1 Círculo | Área 7,07 | Perímetro 9,42 <br/>1 Triángulo equilátero | Área 6,93 | Perímetro 12 <br/>1 Triángulo isósceles | Área 5,56 | Perímetro 11 <br/>1 Trapecio rectángulo | Área 3,5 | Perímetro 9,41 <br/>1 Trapecio isósceles | Área 6 | Perímetro 14,83 <br/>TOTAL:<br/>6 Formas Perímetro 76,67 Área 54,06",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -60,7 +60,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrianguloEquilatero(4.2m)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Cuadrados | Área 29 | Perímetro 28 <br/>2 Círculos | Área 13.01 | Perímetro 18.06 <br/>3 Triángulos equiláteros | Área 49.64 | Perímetro 51.6 <br/>TOTAL:<br/>7 Formas Perímetro 97.66 Área 91.65",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Cuadrados | Área 29 | Perímetro 28 <br/>2 Círculos | Área 13,01 | Perímetro 18,06 <br/>3 Triángulos equiláteros | Área 49,64 | Perímetro 51,6 <br/>TOTAL:<br/>7 Formas Perímetro 97,66 Área 91,65",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -83,7 +83,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(3, 2, altura: 1)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Cuadrados | Área 29 | Perímetro 28 <br/>2 Círculos | Área 13.01 | Perímetro 18.06 <br/>2 Triángulos equiláteros | Área 14.57 | Perímetro 24.6 <br/>2 Triángulos isósceles | Área 11.12 | Perímetro 22 <br/>2 Trapecios rectángulo | Área 10.5 | Perímetro 20.65 <br/>2 Trapecios isósceles | Área 8.5 | Perímetro 22.06 <br/>TOTAL:<br/>12 Formas Perímetro 135.38 Área 86.70",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>2 Cuadrados | Área 29 | Perímetro 28 <br/>2 Círculos | Área 13,01 | Perímetro 18,06 <br/>2 Triángulos equiláteros | Área 14,57 | Perímetro 24,6 <br/>2 Triángulos isósceles | Área 11,12 | Perímetro 22 <br/>2 Trapecios rectángulo | Área 10,5 | Perímetro 20,65 <br/>2 Trapecios isósceles | Área 8,5 | Perímetro 22,06 <br/>TOTAL:<br/>12 Formas Perímetro 135,38 Área 86,70",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -202,7 +202,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(7, 5, altura: 1)
             };
 
-            Assert.AreEqual("<h1>Rapport de formes</h1>1 Carré | Région 25 | Périmètre 20 <br/>1 Cercle | Région 7.07 | Périmètre 9.42 <br/>1 Triangle équilatéral | Région 6.93 | Périmètre 12 <br/>1 Triangle isocèle | Région 5.56 | Périmètre 11 <br/>1 Trapèze rectangle | Région 3.5 | Périmètre 9.41 <br/>1 Trapèze isocèle | Région 6 | Périmètre 14.83 <br/>TOTAL:<br/>6 Formes Périmètre 76.67 Région 54.06",
+            Assert.AreEqual("<h1>Rapport de formes</h1>1 Carré | Région 25 | Périmètre 20 <br/>1 Cercle | Région 7,07 | Périmètre 9,42 <br/>1 Triangle équilatéral | Région 6,93 | Périmètre 12 <br/>1 Triangle isocèle | Région 5,56 | Périmètre 11 <br/>1 Trapèze rectangle | Région 3,5 | Périmètre 9,41 <br/>1 Trapèze isocèle | Région 6 | Périmètre 14,83 <br/>TOTAL:<br/>6 Formes Périmètre 76,67 Région 54,06",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Frances));
         }
 
@@ -220,7 +220,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrianguloEquilatero(4.2m)
             };
 
-            Assert.AreEqual("<h1>Rapport de formes</h1>2 Carrés | Région 29 | Périmètre 28 <br/>2 Cercles | Région 13.01 | Périmètre 18.06 <br/>3 Triangles équilatéraux | Région 49.64 | Périmètre 51.6 <br/>TOTAL:<br/>7 Formes Périmètre 97.66 Région 91.65",
+            Assert.AreEqual("<h1>Rapport de formes</h1>2 Carrés | Région 29 | Périmètre 28 <br/>2 Cercles | Région 13,01 | Périmètre 18,06 <br/>3 Triangles équilatéraux | Région 49,64 | Périmètre 51,6 <br/>TOTAL:<br/>7 Formes Périmètre 97,66 Région 91,65",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Frances));
         }
 
@@ -243,7 +243,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(3, 2, altura: 1)
             };
 
-            Assert.AreEqual("<h1>Rapport de formes</h1>2 Carrés | Région 29 | Périmètre 28 <br/>2 Cercles | Région 13.01 | Périmètre 18.06 <br/>2 Triangles équilatéraux | Région 14.57 | Périmètre 24.6 <br/>2 Triangles isocèles | Région 11.12 | Périmètre 22 <br/>2 Trapèzes rectangles | Région 10.5 | Périmètre 20.65 <br/>2 Trapèzes isocèles | Région 8.5 | Périmètre 22.06 <br/>TOTAL:<br/>12 Formes Périmètre 135.38 Région 86.70",
+            Assert.AreEqual("<h1>Rapport de formes</h1>2 Carrés | Région 29 | Périmètre 28 <br/>2 Cercles | Région 13,01 | Périmètre 18,06 <br/>2 Triangles équilatéraux | Région 14,57 | Périmètre 24,6 <br/>2 Triangles isocèles | Région 11,12 | Périmètre 22 <br/>2 Trapèzes rectangles | Région 10,5 | Périmètre 20,65 <br/>2 Trapèzes isocèles | Région 8,5 | Périmètre 22,06 <br/>TOTAL:<br/>12 Formes Périmètre 135,38 Région 86,70",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Frances));
         }
 

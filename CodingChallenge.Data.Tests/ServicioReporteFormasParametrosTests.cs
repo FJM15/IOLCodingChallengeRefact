@@ -100,7 +100,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarCirculo(diametro: -6)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28.27 | Perímetro 18.85 <br/>TOTAL:<br/>1 Forma Perímetro 18.85 Área 28.27",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Círculo | Área 28,27 | Perímetro 18,85 <br/>TOTAL:<br/>1 Forma Perímetro 18,85 Área 28,27",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -124,7 +124,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioIsoceles(15, 12, altura: 6)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81 | Perímetro 39.37 <br/>TOTAL:<br/>1 Forma Perímetro 39.37 Área 81",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio isósceles | Área 81 | Perímetro 39,37 <br/>TOTAL:<br/>1 Forma Perímetro 39,37 Área 81",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -136,7 +136,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrapecioRectangulo(5, 4, altura: 3)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13.5 | Perímetro 15.16 <br/>TOTAL:<br/>1 Forma Perímetro 15.16 Área 13.5",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Trapecio rectángulo | Área 13,5 | Perímetro 15,16 <br/>TOTAL:<br/>1 Forma Perímetro 15,16 Área 13,5",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
@@ -148,7 +148,7 @@ namespace CodingChallenge.Data.Tests
                 FormaGeometricaContexto.GenerarTrianguloEquilatero(5)
             };
 
-            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Triángulo equilátero | Área 10.83 | Perímetro 15 <br/>TOTAL:<br/>1 Forma Perímetro 15 Área 10.83",
+            Assert.AreEqual("<h1>Reporte de Formas</h1>1 Triángulo equilátero | Área 10,83 | Perímetro 15 <br/>TOTAL:<br/>1 Forma Perímetro 15 Área 10,83",
                 ServicioImpresionReporteFormas.Imprimir(listaFormas, Culturas.Castellano));
         }
 
